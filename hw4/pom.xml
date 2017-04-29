@@ -4,6 +4,29 @@
   <artifactId>hw4</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>hw4</name>
+   <build>
+  <plugins>
+  <plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>exec-maven-plugin</artifactId>
+    <version>1.2.1</version>
+    <executions>
+      <execution>
+        <goals>
+          <goal>java</goal>
+        </goals>
+      </execution>
+    </executions>
+    <configuration>
+      <!-- TODO: if your main class is called something else, change it here -->
+      <mainClass>hw4.languagemodel</mainClass>
+      <!-- TODO: if your class takes command line arguments, change them here -->
+
+    </configuration>
+  </plugin>
+  </plugins>
+  </build>
+
   <dependencies>
 	<dependency>
     	<groupId>edu.stanford.nlp</groupId>
